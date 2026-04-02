@@ -63,6 +63,17 @@ nav{background:#fff;box-shadow:0 2px 16px rgba(26,86,219,.08);position:sticky;to
 .mobile-menu-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;}
 .mobile-menu a{font-size:1rem;font-weight:600;padding:14px 16px;border-radius:12px;border:1px solid var(--border);}
 
+/* ─── logo new ─── */
+.logo img{
+  height:42px;
+  width:auto;
+  object-fit:contain;
+}
+
+
+
+
+
 /* ─── HERO ─── */
 .hero{background:linear-gradient(135deg,#0f2878 0%,#1a56db 55%,#3b82f6 100%);min-height:88vh;display:flex;align-items:center;overflow:hidden;position:relative;}
 .hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");}
@@ -282,13 +293,11 @@ footer{background:#0f2260;color:#fff;padding:60px 24px 24px;}
     <span><i class="fa fa-briefcase"></i> Business Loan – 12% p.a.</span>
     <span><i class="fa fa-car"></i> Car Loan – 7.99% p.a.</span>
     <span><i class="fa fa-graduation-cap"></i> Education Loan – 9.5% p.a.</span>
-    <span><i class="fa fa-shield-halved"></i> Health Insurance from ₹499/month</span>
     <span><i class="fa fa-bolt"></i> Personal Loan – 10.49% p.a.</span>
     <span><i class="fa fa-home"></i> Home Loan – 8.40% p.a.</span>
     <span><i class="fa fa-briefcase"></i> Business Loan – 12% p.a.</span>
     <span><i class="fa fa-car"></i> Car Loan – 7.99% p.a.</span>
     <span><i class="fa fa-graduation-cap"></i> Education Loan – 9.5% p.a.</span>
-    <span><i class="fa fa-shield-halved"></i> Health Insurance from ₹499/month</span>
   </div>
 </div>
 
@@ -296,7 +305,9 @@ footer{background:#0f2260;color:#fff;padding:60px 24px 24px;}
 <nav>
   <div class="nav-inner">
     <a href="#" class="logo">
-      <div class="logo-icon">SL</div>
+<img src="https://res.cloudinary.com/dvhcnw0mr/image/upload/v1775158688/ChatGPT_Image_Apr_3_2026_01_07_25_AM_bz7fov.png" 
+     alt="Saste Loan Logo">
+
       <div>
         <div class="logo-text">Saste <span>Loan</span></div>
         <span class="logo-sub">Sasta Loan, Smart Choice</span>
@@ -317,12 +328,8 @@ footer{background:#0f2260;color:#fff;padding:60px 24px 24px;}
         </div>
       </div>
       <div class="nav-dropdown">
-        <span>Insurance <i class="fa fa-chevron-down" style="font-size:.7rem"></i></span>
         <div class="dropdown-menu">
-          <a href="#"><i class="fa fa-heart-pulse"></i>Health Insurance</a>
-          <a href="#"><i class="fa fa-umbrella"></i>Term Life</a>
-          <a href="#"><i class="fa fa-car"></i>Car Insurance</a>
-          <a href="#"><i class="fa fa-motorcycle"></i>Bike Insurance</a>
+         
         </div>
       </div>
       <a href="#calculator">Calculator</a>
@@ -340,14 +347,16 @@ footer{background:#0f2260;color:#fff;padding:60px 24px 24px;}
 <div class="mobile-menu" id="mobileMenu">
   <div class="mobile-menu-header">
     <div class="logo">
-      <div class="logo-icon">SL</div>
+
+<img src="https://res.cloudinary.com/dvhcnw0mr/image/upload/v1775158688/ChatGPT_Image_Apr_3_2026_01_07_25_AM_bz7fov.png" 
+     alt="Logo">
+
       <div class="logo-text">Saste <span style="color:var(--accent)">Loan</span></div>
     </div>
     <button onclick="toggleMobile()" style="border:none;background:none;font-size:1.4rem;cursor:pointer;"><i class="fa fa-times"></i></button>
   </div>
   <a href="#" onclick="toggleMobile()">Home</a>
   <a href="#loans" onclick="toggleMobile()">Loans</a>
-  <a href="#insurance" onclick="toggleMobile()">Insurance</a>
   <a href="#calculator" onclick="toggleMobile()">Calculator</a>
   <a href="#faq" onclick="toggleMobile()">FAQ</a>
   <a href="#contact" onclick="toggleMobile()">Contact</a>
@@ -367,8 +376,8 @@ footer{background:#0f2260;color:#fff;padding:60px 24px 24px;}
       </div>
       <div class="hero-stats">
         <div class="hero-stat"><div class="num">25+</div><div class="lbl">Lender Partners</div></div>
-        <div class="hero-stat"><div class="num">₹500Cr+</div><div class="lbl">Disbursed</div></div>
-        <div class="hero-stat"><div class="num">50,000+</div><div class="lbl">Happy Customers</div></div>
+        <div class="hero-stat"><div class="num">24/7+</div><div class="lbl">Customer Support </div></div>
+        <div class="hero-stat"><div class="num">100%</div><div class="lbl">Happy Customers</div></div>
         <div class="hero-stat"><div class="num">24 Hrs</div><div class="lbl">Avg Approval</div></div>
       </div>
     </div>
@@ -683,12 +692,12 @@ footer{background:#0f2260;color:#fff;padding:60px 24px 24px;}
 <div class="stats-bar">
   <div class="stats-inner">
     <div class="stat-item">
-      <div class="stat-num" data-target="50000">0</div>
+      <div class="stat-num" >100%</div>
       <div class="stat-lbl">Happy Customers</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num" data-prefix="₹" data-target="500" data-suffix="Cr+">₹0</div>
-      <div class="stat-lbl">Loans Disbursed</div>
+      <div class="stat-num" data-prefix="₹"  data-suffix="Cr+">24/7</div>
+      <div class="stat-lbl">Customer Support</div>
     </div>
     <div class="stat-item">
       <div class="stat-num">4.9/5</div>
@@ -702,95 +711,11 @@ footer{background:#0f2260;color:#fff;padding:60px 24px 24px;}
 </div>
 
 <!-- TESTIMONIALS -->
-<section class="testimonials-section">
-  <div class="section-inner">
-    <div class="section-head">
-      <div class="section-badge">SUCCESS STORIES</div>
-      <h2 class="section-title">Real People, Real Results</h2>
-      <p class="section-sub">Join thousands who got the best loan deals through Saste Loan.</p>
-    </div>
-    <div class="test-grid">
-      <div class="test-card">
-        <div class="test-top">
-          <img class="test-avatar" src="https://i.pravatar.cc/100?img=12" alt="Rahul"/>
-          <div><div class="test-name">Rahul Sharma</div><div class="test-role">Business Owner • Delhi</div></div>
-        </div>
-        <div class="test-stars">★★★★★</div>
-        <p>"Saste Loan saved me lakhs in interest! They found me a business loan at 11.5% when my bank quoted 16%. The team was proactive and guided me throughout."</p>
-        <div class="test-meta">
-          <span class="test-badge">Business Loan</span>
-          <span class="test-badge">₹30 Lakhs</span>
-          <span class="test-badge">48 Hrs</span>
-        </div>
-      </div>
-      <div class="test-card">
-        <div class="test-top">
-          <img class="test-avatar" src="https://i.pravatar.cc/100?img=5" alt="Priya"/>
-          <div><div class="test-name">Priya Agarwal</div><div class="test-role">Software Engineer • Pune</div></div>
-        </div>
-        <div class="test-stars">★★★★★</div>
-        <p>"I struggled with home loan rejections for months. Saste Loan identified the issues in my profile and got my sanction in just 5 days. Truly life-changing!"</p>
-        <div class="test-meta">
-          <span class="test-badge">Home Loan</span>
-          <span class="test-badge">₹80 Lakhs</span>
-          <span class="test-badge">5 Days</span>
-        </div>
-      </div>
-      <div class="test-card">
-        <div class="test-top">
-          <img class="test-avatar" src="https://i.pravatar.cc/100?img=15" alt="Amit"/>
-          <div><div class="test-name">Amit Verma</div><div class="test-role">Freelancer • Bengaluru</div></div>
-        </div>
-        <div class="test-stars">★★★★★</div>
-        <p>"Being a freelancer, I was afraid of loan rejections. Saste Loan connected me with the right lender and I got a personal loan within 24 hours. Highly recommend!"</p>
-        <div class="test-meta">
-          <span class="test-badge">Personal Loan</span>
-          <span class="test-badge">₹6 Lakhs</span>
-          <span class="test-badge">24 Hrs</span>
-        </div>
-      </div>
-      <div class="test-card">
-        <div class="test-top">
-          <img class="test-avatar" src="https://i.pravatar.cc/100?img=9" alt="Neha"/>
-          <div><div class="test-name">Neha Joshi</div><div class="test-role">Doctor • Mumbai</div></div>
-        </div>
-        <div class="test-stars">★★★★★</div>
-        <p>"I needed funds urgently for clinic expansion. Saste Loan's team worked overnight and got me a professional loan at unbeatable rates. Zero stress throughout!"</p>
-        <div class="test-meta">
-          <span class="test-badge">Professional Loan</span>
-          <span class="test-badge">₹20 Lakhs</span>
-          <span class="test-badge">36 Hrs</span>
-        </div>
-      </div>
-      <div class="test-card">
-        <div class="test-top">
-          <img class="test-avatar" src="https://i.pravatar.cc/100?img=22" alt="Vikram"/>
-          <div><div class="test-name">Vikram Singh</div><div class="test-role">Entrepreneur • Jaipur</div></div>
-        </div>
-        <div class="test-stars">★★★★★</div>
-        <p>"Got a loan against property for my son's education abroad. The valuation was done in 2 days and disbursement was smooth. Saste Loan truly means what it says!"</p>
-        <div class="test-meta">
-          <span class="test-badge">LAP</span>
-          <span class="test-badge">₹1.5 Cr</span>
-          <span class="test-badge">7 Days</span>
-        </div>
-      </div>
-      <div class="test-card">
-        <div class="test-top">
-          <img class="test-avatar" src="https://i.pravatar.cc/100?img=32" alt="Sunita"/>
-          <div><div class="test-name">Sunita Mehra</div><div class="test-role">Teacher • Lucknow</div></div>
-        </div>
-        <div class="test-stars">★★★★★</div>
-        <p>"The transparency was what won me over. No hidden fees, clear communication, and a rate 2% lower than my existing bank. Will always come back to Saste Loan!"</p>
-        <div class="test-meta">
-          <span class="test-badge">Personal Loan</span>
-          <span class="test-badge">₹3 Lakhs</span>
-          <span class="test-badge">24 Hrs</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
+   
+      
+   
+  
 
 <!-- FAQ -->
 <section class="faq-section" id="faq">
@@ -852,8 +777,8 @@ footer{background:#0f2260;color:#fff;padding:60px 24px 24px;}
     <div class="footer-top">
       <div class="footer-brand">
         <div class="logo" style="margin-bottom:12px">
-          <div class="logo-icon">SL</div>
-          <div>
+<img src="https://res.cloudinary.com/dvhcnw0mr/image/upload/v1775158688/ChatGPT_Image_Apr_3_2026_01_07_25_AM_bz7fov.png" 
+     alt="Logo">          <div>
             <div class="logo-text">Saste <span style="color:var(--accent)">Loan</span></div>
             <span class="logo-sub" style="color:rgba(255,255,255,.5)">Sasta Loan, Smart Choice</span>
           </div>
@@ -879,21 +804,13 @@ footer{background:#0f2260;color:#fff;padding:60px 24px 24px;}
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Insurance</h4>
-        <ul>
-          <li><a href="#"><i class="fa fa-chevron-right"></i>Health Insurance</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right"></i>Term Life</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right"></i>Car Insurance</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right"></i>Bike Insurance</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right"></i>Loan Protector</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right"></i>EMI Protector</a></li>
-        </ul>
+       
       </div>
       <div class="footer-col">
         <h4>Contact Us</h4>
         <ul>
           <li><a href="#"><i class="fa fa-phone"></i>+91 98765 43210</a></li>
-          <li><a href="#"><i class="fa fa-envelope"></i><span class="__cf_email__" data-cfemail="2a424f4646456a594b595e4f46454b4404494547">[email&#160;protected]</span></a></li>
+          <li><a href="#"><i class="fa fa-envelope"></i><span class="__cf_email__" data-cfemail="2a424f4646456a594b595e4f46454b4404494547">admin@sasteloan.com</span></a></li>
           <li><a href="#"><i class="fa fa-location-dot"></i>New Delhi, India</a></li>
           <li><a href="#"><i class="fa fa-clock"></i>Mon–Sat, 9AM–7PM</a></li>
         </ul>
